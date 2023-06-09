@@ -11,7 +11,22 @@
     <header></header>
     <nav></nav>
     <section>
-        <div id="miAplicacion"></div>
+        <h1>Inicio</h1>
+        <!-- Codigo javascript {{}} fuera de vue (se ejecuta como texto) -->
+        <p>{{1+1}}</p> 
+        <div id="miAplicacion">
+            <!-- Codigo javascript {{}} dentro de vue (se ejecuta como js) -->
+            <p>{{1+1}}</p>
+            <p>{{true?'Activo':'Inactivo'}}</p>
+            
+            <h4>{{nombre}}</h4>
+            <h4>{{apellido}}</h4>
+            <h4>{{mensaje}}</h4>
+
+            <button v-on:click="cambiarNombre">Cambiar Nombre</button>
+            <button v-on:click="cambiarApellido">Cambiar Apellido</button>
+        </div>
+        <h1>Fin</h1>
     </section>
     <footer></footer>
     
