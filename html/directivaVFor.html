@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,13 +9,36 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
+
 <body>
     <header></header>
     <nav></nav>
     <section>
-        <div id ="myApp2"></div>
+        <div id="myApp2">
+            <h4>Estudiantes UCE</h4>
+            <input type="text" v-model="nombre" v-on:keypress.enter="agregarEstudiante2">
+            <h1>{{nombre}}</h1>
+            <hr>
+            <h3>Lista Estudiantes</h3>
+            <!-- <ul>      
+                <li>{{miArreglo[0].nombre}}</li>
+                <li>{{miArreglo[1].apellido}}</li>
+                <li>{{miArreglo[2]}}</li>
+                <li>{{miArreglo[3]}}</li>
+                <li>{{miArreglo[4]}}</li>
+            </ul> -->
+
+            <ul>
+                <!-- El elemento de miArreglo desestructurado y con indice-->
+                <li v-for="({nombre,apellido}, index) in miArreglo">
+                    <span>{{nombre}} - {{++index}}</span>
+                    <blockquote>{{apellido}}</blockquote>
+                </li>
+            </ul>
+        </div>
     </section>
     <footer></footer>
     <script src="../js/vFor.js"></script>
 </body>
+
 </html>
