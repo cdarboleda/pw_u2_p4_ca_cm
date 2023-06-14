@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section>
+        <h1>Inicio</h1>
+        <!-- Codigo javascript {{}} fuera de vue (se ejecuta como texto) -->
+        <p>{{1+1}}</p> 
+        <div id="miAplicacion">
+            <!-- Codigo javascript {{}} dentro de vue (se ejecuta como js) -->
+            <p>{{1+1}}</p>
+            <p>{{true?'Activo':'Inactivo'}}</p>
+            
+            <h4>{{nombre}}</h4>
+            <h4>{{apellido}}</h4>
+            <h4>{{mensaje}}</h4>
+
+            <button v-on:click="cambiarNombre">Cambiar Nombre</button>
+            <button v-on:click="cambiarApellido">Cambiar Apellido</button>
+        </div>
+        <h1>Fin</h1>
+    </section>
+    <footer></footer>
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

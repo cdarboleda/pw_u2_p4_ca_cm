@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+  
+  .formContainer {
+    display: grid;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(242, 215, 250);
+  }
+  
+  .formContainer input,
+  .formContainer button {
+    margin-top: 10px;
+  }
+
+  .formContainer button {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+  }
+  
+  .listaEstudiantes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  
