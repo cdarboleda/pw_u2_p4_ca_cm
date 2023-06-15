@@ -38,7 +38,7 @@
 }
 
 .labelResultado {
-    grid-column: span 4;
+    grid-column: span 3;
     /*Elemento que ocupa mas de un espacio COLUMNA*/
     background-color: whitesmoke;
     border: 2px solid rgb(216, 82, 82);

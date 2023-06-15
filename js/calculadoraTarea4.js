@@ -16,17 +16,15 @@ const app = Vue.createApp({
         },
 
         calcClear() {
-            this.resultado = ''
+            this.resultado = '';
             //document.getElementById('labelResultado').innerHTML = "Resultado: ";
-            this.resultado = "Resultado: ";
         },
 
         calcRes() {
             try {
-              const resNumerico = parseFloat(eval(this.resultado));
-              this.resultado = "Resultado: " + this.resNumerico;
+              let resNumerico = parseFloat(eval(this.resultado));
               console.log(resNumerico);
-              this.resultado = this.resNumerico;
+              this.resultado = resNumerico;
             } catch (error) {
               this.calcClear();
             }
