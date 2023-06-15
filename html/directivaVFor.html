@@ -32,7 +32,8 @@
                 <!-- El elemento de miArreglo desestructurado y con indice-->
                 <li v-for="({nombre,apellido}, index) in miArreglo">
                     <span>{{nombre}} - {{++index}}</span>
-                    <blockquote>{{apellido}}</blockquote>
+                    <blockquote v-show="apellido!==undefined">Apellido1: {{apellido}}</blockquote>
+
                 </li>
             </ul>
         </div>

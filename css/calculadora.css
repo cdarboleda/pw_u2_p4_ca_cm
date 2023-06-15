@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    /*background-color: aqua;*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+.calculadora {
+    display: grid;
+    /*Ocupa una linea por elemento */
+    grid-template-columns: repeat(4, 75px);
+    /*Cuatro columnas con un ancho de 75px */
+    /* Tambien podemos limitar las filas 
+   grid-template-rows: repeat(4, 25px);
+   */
+    background-color: salmon;
+    padding: 20px;
+    
+    border-radius: 20px;
+    box-shadow: 13px 13px 10px 0px brown;
+}
+
+.botonGrande {
+    grid-column: span 2;
+    /*Elemento que ocupa mas de un espacio COLUMNA*/
+}
+
+.calculadora button {
+    margin: 2px 2px 2px 2px;
+    border-radius: 10px;
+    border: 2px solid orange;
+}
+
+.calculadora button:hover {
+    background-color: rgb(235, 206, 180);
+    cursor: pointer;
+}
+
+.labelResultado {
+    grid-column: span 4;
+    /*Elemento que ocupa mas de un espacio COLUMNA*/
+    background-color: whitesmoke;
+    border: 2px solid rgb(216, 82, 82);
+}
+
+.labelCalculadora {
+    grid-column: span 4;
+    border: 2px solid rgb(216, 82, 82);
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header></header>
+    <nav></nav>
+    <section>
+
+        <div id ="myAplicacion" class="container">
+            <div  class="calculadora">
+
+                <label class = "labelCalculadora" for="">Calculadora</label>
+                <button v-on:click="calc('1')">1</button>
+                <button v-on:click="calc('2')">2</button>
+                <button v-on:click="calc('3')">3</button>
+                <button v-on:click="calc('+')">+</button>
+
+                <button v-on:click="calc('4')">4</button>
+                <button v-on:click="calc('5')">5</button>
+                <button v-on:click="calc('6')">6</button>
+                <button v-on:click="calc('-')">-</button>
+
+                <button v-on:click="calc('7')">7</button>
+                <button v-on:click="calc('8')">8</button>
+                <button v-on:click="calc('9')">9</button>
+                <button v-on:click="calc('/')">/</button>
+                
+                <button class = "botonGrande" v-on:click="calc('0')">0</button>
+                <button v-on:click="calcRes">=</button>
+                <button v-on:click="calc('*')">*</button>
+
+                <button v-on:click="calcClear">Limpiar</button>
+                <!-- <label class = "labelResultado" id="labelResultado" v-model ="labelResultado" for="">Resultado</label> -->
+                <h1 v-model = "resultado">{{resultado}}</h1>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="../js/calculadoraTarea4.js"></script>
+</body>
+
+</html>
